@@ -1,0 +1,48 @@
+#contenedor{
+    height: 700px;
+}
+
+h1{ 
+    font-size: 40px;
+    text-align: center;
+}
+
+/* xs sm*/
+
+@media screen and (max-width:600px) /*mientras el ancho no sea mayor a ...px se aplica*/{ 
+    #contenedor{
+        background-color: aqua;
+    }
+    h1{
+        font-size:  30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+
+/* md*/
+
+@media only screen and (min-width:600px)/*mientras el ancho no sea menor a ...px se aplica*/{
+
+    #contenedor{
+        background-color: rgba(255, 0, 0, 0.989);
+    }
+    h1{
+        font-size:  50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+}
+
+/*LG*/
+
+@media only screen and (min-width: 992px){
+    #contenedor{
+        background-color: rgba(0, 255, 4, 0.989);
+    }
+    h1{
+        background-color: black;
+        color: white;
+        font-size:  60px;
+        font-family: 'Times New Roman', Times, serif
+        
+    }
+}
